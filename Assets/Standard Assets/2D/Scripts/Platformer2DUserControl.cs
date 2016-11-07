@@ -36,17 +36,5 @@ namespace UnityStandardAssets._2D
             m_Character.Move(h, crouch, m_Jump);
             m_Jump = false;
         }
-		void OnCollisionEnter2d(Collision2D other)
-		{
-			if (other.transform.tag == "MovingPlatform") {
-				transform.parent = other.transform;
-			}
-		}
-		void OnCollisionEixt2d(Collision2D other)
-		{
-			if (other.transform.tag == "MovingPlatform") {
-				transform.parent = null;
-			}
-		}
     }
 }
