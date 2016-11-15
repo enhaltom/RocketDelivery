@@ -3,8 +3,6 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 	void Update() {
-		Debug.Log ("In the updated function");
-		Debug.Log (playerStats.Health);
 
 		if (transform.position.y <= ydeath) {
 			DamagePlayer (99999);
@@ -24,8 +22,6 @@ public class Player : MonoBehaviour {
 
 	public PlayerStats playerStats = new PlayerStats ();
 	public int ydeath = -20;
-
-
 
 	public void DamagePlayer(int damage) {
 		playerStats.Health -= damage;

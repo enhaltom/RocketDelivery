@@ -25,7 +25,6 @@ public class Gamemaster : MonoBehaviour {
 	}
 	void Start () {
 
-		Debug.Log ("IN gamemaster 3 ");
 		if (gm == null) {
 			gm = GameObject.FindGameObjectWithTag ("GM").GetComponent<Gamemaster>();
 		}
